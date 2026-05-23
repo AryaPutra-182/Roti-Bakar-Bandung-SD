@@ -14,10 +14,10 @@ export default function Footer() {
 
   return (
     <footer className="bg-brand-brown text-white pt-12 pb-6 border-t-[0.5px] border-white/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         
         {/* Brand */}
-        <div className="col-span-1 flex flex-col items-start justify-center">
+        <div className="col-span-1 sm:col-span-2 md:col-span-1 flex flex-col items-center md:items-start justify-center">
           <Link href="/" className="flex items-center gap-3 group mb-3">
             <div className="relative w-12 h-12 flex-shrink-0">
               <Image

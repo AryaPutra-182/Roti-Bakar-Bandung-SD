@@ -27,8 +27,8 @@ export default async function Home() {
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-xl">
-            <div className="flex items-center gap-5 mb-4">
-              <div className="relative w-24 h-24 flex-shrink-0 drop-shadow-2xl">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="relative w-16 h-16 sm:w-24 sm:h-24 flex-shrink-0 drop-shadow-2xl">
                 <Image
                   src="/ROTI.png"
                   alt="Logo Roti Bakar Bandung SD"
@@ -39,10 +39,10 @@ export default async function Home() {
                 />
               </div>
               <div>
-                <h1 className="font-logo text-4xl md:text-5xl text-white mb-1 text-shadow-sm leading-tight">
+                <h1 className="font-logo text-2xl sm:text-4xl md:text-5xl text-white mb-1 text-shadow-sm leading-tight">
                   Roti Bakar Bandung SD
                 </h1>
-                <p className="text-brand-orange font-semibold text-base md:text-lg italic">
+                <p className="text-brand-orange font-semibold text-sm sm:text-base md:text-lg italic">
                   kreasi rasa yang tak terlupakan
                 </p>
               </div>
@@ -50,10 +50,10 @@ export default async function Home() {
             <p className="text-gray-200 mb-8 text-sm md:text-base leading-relaxed max-w-lg">
               Roti bakar spesial yang dibuat dengan bahan premium, disajikan hangat dengan berbagai pilihan topping lezat yang siap memanjakan lidah Anda.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link
                 href="/menu"
-                className="bg-brand-orange hover:bg-brand-orange-hover text-white px-8 py-3 rounded-full font-semibold transition-transform transform hover:scale-105 shadow-lg"
+                className="text-center bg-brand-orange hover:bg-brand-orange-hover text-white px-8 py-3 rounded-full font-semibold transition-transform transform hover:scale-105 shadow-lg"
               >
                 Lihat Menu
               </Link>
@@ -61,7 +61,7 @@ export default async function Home() {
                 href="https://wa.me/6281234567890?text=Halo%2C+saya+ingin+memesan+Roti+Bakar"
                 target="_blank"
                 rel="noreferrer"
-                className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white px-8 py-3 rounded-full font-semibold transition-all shadow-lg text-center"
+                className="text-center bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white px-8 py-3 rounded-full font-semibold transition-all shadow-lg"
               >
                 Pesan Sekarang
               </a>

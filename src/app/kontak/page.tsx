@@ -142,7 +142,7 @@ export default function Kontak() {
                   Buka di Google Maps
                 </a>
               </div>
-              <div className="rounded-3xl overflow-hidden shadow-2xl h-[440px] relative border border-gray-100">
+              <div className="rounded-3xl overflow-hidden shadow-2xl h-[280px] sm:h-[440px] relative border border-gray-100">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.350479730301!2d112.63685079999999!3d-7.962684899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629001f9cb3b9%3A0xe0ebe582568c476f!2sRoti%20bakar%20bandung%20sd!5e0!3m2!1sid!2sid!4v1779544725349!5m2!1sid!2sid"
                   width="100%"
