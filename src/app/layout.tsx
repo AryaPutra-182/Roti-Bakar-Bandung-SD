@@ -16,8 +16,8 @@ const playball = Playball({
 });
 
 export const metadata: Metadata = {
-  title: "Roti Bakar Premium",
-  description: "Roti bakar premium dengan rasa nikmat.",
+  title: "Roti Bakar Bandung SD",
+  description: "Kreasi Rasa Yang Tak Pernah Terlupakan",
 };
 
 export default function RootLayout({

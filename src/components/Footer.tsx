@@ -15,7 +15,7 @@ export default function Footer() {
   return (
     <footer className="bg-brand-brown text-white pt-12 pb-6 border-t-[0.5px] border-white/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-        
+
         {/* Brand */}
         <div className="col-span-1 sm:col-span-2 md:col-span-1 flex flex-col items-center md:items-start justify-center">
           <Link href="/" className="flex items-center gap-3 group mb-3">
@@ -28,12 +28,13 @@ export default function Footer() {
                 className="object-contain drop-shadow-md group-hover:scale-110 transition-transform duration-300"
               />
             </div>
+
             <div className="flex flex-col leading-tight">
               <span className="font-logo text-xl tracking-wide text-white leading-none">
                 Roti Bakar Bandung SD
               </span>
               <span className="text-xs text-brand-orange font-medium italic tracking-wide">
-                kreasi rasa yang tak terlupakan
+                Kreasi Rasa Yang Tak Terlupakan
               </span>
             </div>
           </Link>
@@ -41,12 +42,16 @@ export default function Footer() {
 
         {/* Pesan via WA */}
         <div className="col-span-1 flex flex-col justify-center">
-          <h3 className="font-bold text-lg mb-4 text-center md:text-left">Pesan Sekarang</h3>
+          <h3 className="font-bold text-lg mb-4 text-center md:text-left">
+            Pesan Sekarang
+          </h3>
+
           <p className="text-sm text-gray-300 mb-4 text-center md:text-left leading-relaxed">
             Hubungi kami langsung via WhatsApp untuk pemesanan cepat dan mudah!
           </p>
+
           <a
-            href="https://wa.me/6281234567890?text=Halo%2C+saya+ingin+memesan+Roti+Bakar+Bandung+SD"
+            href="https://wa.me/+6281908618783?text=Halo%2C+saya+ingin+memesan+Roti+Bakar"
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-center md:justify-start gap-2 bg-green-500 hover:bg-green-400 text-white px-5 py-3 rounded-xl font-semibold text-sm transition-all duration-300 transform hover:scale-105 shadow-lg w-fit"
@@ -56,20 +61,43 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* Contact */}
+        {/* Order Online */}
         <div className="col-span-1">
-          <h3 className="font-bold text-lg mb-4 text-center md:text-left">Contact</h3>
+          <h3 className="font-bold text-lg mb-4 text-center md:text-left">
+            Pesan Lewat Aplikasi
+          </h3>
+
           <ul className="space-y-2 text-sm text-gray-300 text-center md:text-left">
-            <li><a href="#" className="hover:text-brand-orange transition-colors">Email</a></li>
-            <li><a href="#" className="hover:text-brand-orange transition-colors">Facebook</a></li>
-            <li><a href="#" className="hover:text-brand-orange transition-colors">Instagram</a></li>
-            <li><a href="#" className="hover:text-brand-orange transition-colors">Twitter</a></li>
+            <li>
+              <a
+                href="https://r.grab.com/g/6-20260524_221308_4f218e747642411180ed8ff1e64b4786_MEXMPS-6-C7XUMFUCJXVELE"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-brand-orange transition-colors"
+              >
+                GrabFood
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://gofood.link/a/Stduwtb"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-brand-orange transition-colors"
+              >
+                GoFood
+              </a>
+            </li>
           </ul>
         </div>
 
         {/* Lokasi Kami */}
         <div className="col-span-1">
-          <h3 className="font-bold text-lg mb-4 text-center md:text-left">Lokasi Kami</h3>
+          <h3 className="font-bold text-lg mb-4 text-center md:text-left">
+            Lokasi Kami
+          </h3>
+
           <div className="rounded-xl overflow-hidden shadow-lg h-32 relative">
             <iframe
               src={"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.350479730301!2d112.63685079999999!3d-7.962684899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629001f9cb3b9%3A0xe0ebe582568c476f!2sRoti%20bakar%20bandung%20sd!5e0!3m2!1sid!2sid!4v1779544725349!5m2!1sid!2sid"}
@@ -83,7 +111,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      
+
       <div className="mt-12 pt-6 border-t border-white/10 text-center text-xs text-gray-400">
         Copyright &copy; 2026 Roti Bakar Bandung SD. All rights reserved.
       </div>

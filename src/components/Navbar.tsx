@@ -42,7 +42,7 @@ export default function Navbar() {
                   Roti Bakar Bandung SD
                 </span>
                 <span className="text-[10px] sm:text-xs text-brand-orange font-medium italic tracking-wide">
-                  kreasi rasa yang tak terlupakan
+                  Kreasi Rasa Yang Tak Pernah Terlupakan
                 </span>
               </div>
             </Link>
@@ -66,7 +66,7 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center">
             <a
-              href="https://wa.me/6281234567890?text=Halo%2C+saya+ingin+memesan+Roti+Bakar"
+              href="https://wa.me/+6281908618783?text=Halo%2C+saya+ingin+memesan+Roti+Bakar"
               target="_blank"
               rel="noreferrer"
               className="bg-brand-orange hover:bg-brand-orange-hover text-white px-6 py-2 rounded-full font-semibold text-sm transition-all duration-300 transform hover:scale-105 shadow-md text-center"
@@ -105,7 +105,7 @@ export default function Navbar() {
           ))}
           <div className="pt-2">
             <a
-              href="https://wa.me/6281234567890?text=Halo%2C+saya+ingin+memesan+Roti+Bakar"
+              href="https://wa.me/+6281908618783?text=Halo%2C+saya+ingin+memesan+Roti+Bakar"
               target="_blank"
               rel="noreferrer"
               onClick={() => setMenuOpen(false)}
