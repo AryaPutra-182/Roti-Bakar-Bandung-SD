@@ -54,7 +54,8 @@ export default function Footer() {
             href="https://wa.me/+6281908618783?text=Halo%2C+saya+ingin+memesan+Roti+Bakar"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center justify-center md:justify-start gap-2 bg-green-500 hover:bg-green-400 text-white px-5 py-3 rounded-xl font-semibold text-sm transition-all duration-300 transform hover:scale-105 shadow-lg w-fit"
+            
+            className="flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white px-5 py-3 rounded-xl font-semibold text-sm transition-all duration-300 transform hover:scale-105 shadow-lg mx-auto md:mx-0 w-fit"
           >
             <FaWhatsapp className="text-xl" />
             Chat WhatsApp
