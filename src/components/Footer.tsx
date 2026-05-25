@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { FaWhatsapp, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
 
 export default function Footer() {
   const pathname = usePathname();
@@ -50,16 +50,18 @@ export default function Footer() {
             Hubungi kami langsung via WhatsApp untuk pemesanan cepat dan mudah!
           </p>
 
-          <a
-            href="https://wa.me/+6281908618783?text=Halo%2C+saya+ingin+memesan+Roti+Bakar"
-            target="_blank"
-            rel="noreferrer"
-            
-            className="flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white px-5 py-3 rounded-xl font-semibold text-sm transition-all duration-300 transform hover:scale-105 shadow-lg mx-auto md:mx-0 w-fit"
-          >
-            <FaWhatsapp className="text-xl" />
-            Chat WhatsApp
-          </a>
+          {/* FIX CENTER BUTTON */}
+          <div className="flex justify-center md:justify-start">
+            <a
+              href="https://wa.me/6281908618783?text=Halo%2C+saya+ingin+memesan+Roti+Bakar"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white px-5 py-3 rounded-xl font-semibold text-sm transition-all duration-300 transform hover:scale-105 shadow-lg w-fit"
+            >
+              <FaWhatsapp className="text-xl" />
+              Chat WhatsApp
+            </a>
+          </div>
         </div>
 
         {/* Order Online */}
@@ -101,7 +103,7 @@ export default function Footer() {
 
           <div className="rounded-xl overflow-hidden shadow-lg h-32 relative">
             <iframe
-              src={"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.350479730301!2d112.63685079999999!3d-7.962684899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629001f9cb3b9%3A0xe0ebe582568c476f!2sRoti%20bakar%20bandung%20sd!5e0!3m2!1sid!2sid!4v1779544725349!5m2!1sid!2sid"}
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.350479730301!2d112.63685079999999!3d-7.962684899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629001f9cb3b9%3A0xe0ebe582568c476f!2sRoti%20bakar%20bandung%20sd!5e0!3m2!1sid!2sid!4v1779544725349!5m2!1sid!2sid"
               width="100%"
               height="100%"
               style={{ border: 0 }}
