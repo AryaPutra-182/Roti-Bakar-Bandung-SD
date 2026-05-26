@@ -59,7 +59,7 @@ export default function Menu() {
       </section>
 
       {/* Main Content */}
-      <section className="py-12">
+      <section className="py-7">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Title Pengganti Filter */}
