@@ -160,7 +160,7 @@ export default function Kontak() {
                 </p>
 
                 <div className="space-y-3 mb-10">
-                  {["Respon cepat", "Rasa fresh setiap hari", "Dibuat dari bahan pilihan"].map((item) => (
+                  {["Respon cepat", "Rasa nikmat setiap gigitan", "Dibuat dari bahan pilihan"].map((item) => (
                     <div key={item} className="flex items-center gap-3 text-sm text-gray-200">
                       <div className="w-5 h-5 rounded-full bg-green-500 flex items-center justify-center text-white text-xs flex-shrink-0">
                         ✓
