@@ -7,7 +7,6 @@ import { supabase } from "../../lib/supabase";
 
 export default function Menu() {
   const [menuItems, setMenuItems] = useState<any[]>([]);
-  const [filter, setFilter] = useState("Semua");
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -30,19 +29,6 @@ export default function Menu() {
 
     fetchMenu();
   }, []);
-
-  const filteredMenu =
-    filter === "Semua"
-      ? menuItems
-      : menuItems.filter((item) => item.kategori === filter);
-
-  const getButtonClass = (btnFilter: string) => {
-    if (filter === btnFilter) {
-      return "bg-brand-orange text-white px-8 py-3 rounded-full font-semibold shadow-md transition-colors";
-    }
-
-    return "bg-white/50 backdrop-blur-sm border border-gray-300 text-gray-700 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold transition-colors";
-  };
 
   return (
     <div className="flex flex-col min-h-screen bg-background">
@@ -75,35 +61,15 @@ export default function Menu() {
       {/* Main Content */}
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Filters */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <button
-              onClick={() => setFilter("Semua")}
-              className={getButtonClass("Semua")}
-            >
-              Semua
-            </button>
-
-            <button
-              onClick={() => setFilter("Roti Bakar")}
-              className={getButtonClass("Roti Bakar")}
-            >
-              Roti Bakar
-            </button>
-
-            <button
-              onClick={() => setFilter("Minuman")}
-              className={getButtonClass("Minuman")}
-            >
-              Minuman
-            </button>
-
-            <button
-              onClick={() => setFilter("Lainnya")}
-              className={getButtonClass("Lainnya")}
-            >
-              Lainnya
-            </button>
+          
+          {/* Title Pengganti Filter */}
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-brand-brown mb-3">
+              Menu Kami
+            </h2>
+            <p className="text-gray-500 mt-2 text-sm">
+              Pilihan menu terbaik yang siap kamu nikmati
+            </p>
           </div>
 
           {/* Grid */}
@@ -115,19 +81,18 @@ export default function Menu() {
                 Memuat Menu...
               </p>
             </div>
-          ) : filteredMenu.length === 0 ? (
+          ) : menuItems.length === 0 ? (
             <div className="text-center py-20 text-gray-500 bg-white rounded-2xl shadow-sm border border-gray-100">
               <p className="font-medium text-lg mb-2">
-                Belum ada menu di kategori ini.
+                Belum ada menu tersedia.
               </p>
-
               <p className="text-sm">
-                Silakan cek kategori lain atau tunggu update terbaru kami!
+                Silakan tunggu update terbaru kami!
               </p>
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-              {filteredMenu.map((item) => (
+              {menuItems.map((item) => (
                 <div
                   key={item.id}
                   className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 group hover:shadow-xl hover:-translate-y-2 hover:scale-101 transition-all duration-300 flex flex-col"
