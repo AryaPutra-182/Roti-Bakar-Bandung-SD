@@ -4,6 +4,15 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
+export const metadata: Metadata = {
+  metadataBase: new URL("https://rotibakar-bandung-sd.vercel.app"),
+  title: "Roti Bakar Bandung SD",
+  description: "Kreasi Rasa Yang Tak Pernah Terlupakan",
+  verification: {
+    google: "pvv7_3puCWOYdZTpAjq4BeaR0CGx8dHP74L1NGJGU1U",
+  },
+};
+
 const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin"],
@@ -14,12 +23,6 @@ const playball = Playball({
   weight: "400",
   subsets: ["latin"],
 });
-
-export const metadata: Metadata = {
-  metadataBase: new URL("https://rotibakar-bandung-sd.vercel.app"),
-  title: "Roti Bakar Bandung SD",
-  description: "Kreasi Rasa Yang Tak Pernah Terlupakan",
-};
 
 export default function RootLayout({
   children,
