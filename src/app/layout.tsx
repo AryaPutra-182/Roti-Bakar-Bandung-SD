@@ -16,6 +16,7 @@ const playball = Playball({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://rotibakar-bandung-sd.vercel.app"),
   title: "Roti Bakar Bandung SD",
   description: "Kreasi Rasa Yang Tak Pernah Terlupakan",
 };
