@@ -17,13 +17,18 @@ export const metadata: Metadata = {
     "roti bakar SD",
     "roti bakar enak",
     "roti bakar topping",
-    "jajanan bandung",
-    "kuliner bandung",
+    "jajanan malang",
+    "roti malang",
     "roti bakar murah",
     "pesan roti bakar",
     "roti bakar malang",
     "roti bakar Bandung di malang",
+    "roti bakar bandung malang",
+    "roti bakar bandung malang enak",
+    "roti bakar murah malang",
+    "pesan roti bakar bandung malang"
   ],
+
   openGraph: {
     type: "website",
     locale: "id_ID",
