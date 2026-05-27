@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Roti Bakar Bandung SD",
   description: "Kreasi Rasa Yang Tak Pernah Terlupakan",
   verification: {
-    google: "pvv7_3puCWOYdZTpAjq4BeaR0CGx8dHP74L1NGJGU1U",
+    google: "ha6ipiM7RhmFbpKzrC4DUhPi3AF-jcD5Lvs7mYMhYlk",
   },
 };
 
