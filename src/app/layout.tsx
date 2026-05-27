@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://rotibakar-bandung-sd.vercel.app"),
+  metadataBase: new URL("https://roti-bakar-bandung-sd.vercel.app"),
   title: "Roti Bakar Bandung SD",
   description: "Kreasi Rasa Yang Tak Pernah Terlupakan",
   verification: {
